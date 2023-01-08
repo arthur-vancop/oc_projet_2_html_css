@@ -1,0 +1,658 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
+
+* {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+}
+
+body {
+    margin: auto;
+    width: 100%;
+    max-width: 1400px;
+    min-width: 992px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+main {
+    width: 100%;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.375em;
+    font-weight: 700;
+    font-style: normal;
+}
+
+p {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+footer {
+    margin-top: 60px;
+    padding-top: 30px;
+    width: 100%;
+    height: 200px;
+    background-color: #F2F2F2;
+}
+
+#corps_page { /*Création de marges.*/
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#menu {
+    display: flex;
+    text-align: center;
+}
+
+#logo_page {
+    margin-top: 44px;
+    width: 61px;
+    height: 19px;
+}
+
+#boite_recherche {
+    display: flex;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#formulaire {
+    display: flex;
+}
+
+#location {
+    background-color: #F2F2F2;
+    padding: 16px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+#champ_recherche {
+    display: block;
+    width: 70%;
+    height: 46px;
+    padding-left: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    border: 1px solid #f2f2f2;
+}
+
+#champ_recherche:focus {
+    outline: none;
+}
+
+#bouton_recherche {
+    display: block;
+    width: 40%;
+    border: 1px solid #0065FC;
+    background-color: #0065FC;
+    color: white;
+    font-size: 1.125em;
+    font-weight: 700;
+    border-radius: 0px 15px 15px 0px;
+}
+
+#bouton_recherche:hover {
+    cursor: pointer;
+}
+
+#boite_filtre {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+#champ_filtre {
+    display: flex;
+}
+
+#info {
+    display: block;
+    text-align: center;
+    line-height: 24px;
+    color: #0065FC;
+    font-size: 0.625em;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #d9d9d9;
+    border-radius: 100%;
+    margin-right: 12px;
+}
+
+#boite_hebergement_populaire {
+    display: flex;
+    margin-top: 20px;
+}
+
+#hebergement {
+    width: 60%;
+    height: 586px;
+    margin-right: 40px;
+}
+
+#hebergement h2 {
+    margin-bottom: 20px;
+    font-size: min(max(1.188em, 1.6vw), 1.375em);
+}
+
+#populaire {
+    width: 25%;
+    height: 586px;
+}
+
+#boite_titre_graph {
+    display: flex;
+    justify-content: space-between;
+}
+
+#boite_titre_graph h2 {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: min(max(1.188em, 1.6vw), 1.375em);
+}
+
+#boite_titre_graph i {
+    line-height: 24px;
+    color: #0065FC;
+    font-size: 1.375em;
+}
+
+#hebergement, #populaire {
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+#boite_carte_hebergement_vertical {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#boite_carte_hebergement_horizontal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#afficher_plus {
+    display: inline-block;
+    margin-top: 40px;
+    font-size: 1.125em;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+}
+
+#boite_activite {
+    margin-top: 60px;
+}
+
+#boite_activite h2 {
+    margin-bottom: 30px;
+}
+
+#boite_carte_activite {
+    display: flex;
+    justify-content: space-between;
+}
+
+#boite_footer {
+    display: flex;
+    margin-left: 70px;
+}
+
+.choix_menu {
+    display: block;
+    padding-top: 48px;
+    width: 162px;
+    text-decoration: none;
+    color: black;
+}
+
+.choix_menu:hover {
+    color: #0065FC;
+    font-weight: 500;
+    border-top: 2px solid #0065FC;
+    padding-top: 46px;
+}
+
+.filtre {
+    display: block;
+    margin-left: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: 45px;
+    color: black;
+    font-size: 1.063em;
+    font-weight: 700;
+    line-height: 45px;
+    text-decoration: none;
+    border: 2px solid #d9d9d9;
+    border-radius: 25px;
+}
+
+.filtre:hover {
+    background-color: #DEEBFF;
+}
+
+.filtre i {
+    color: #0065FC;
+    font-size: 1.275em;
+    line-height: 45px;
+    margin-right: 10px;
+}
+
+.gras {
+    font-size: 1.125em;
+    font-weight: 700;
+}
+
+.boite_info {
+    display: flex;
+    align-items: center;
+}
+
+.carte_hebergement_vertical {
+    display: block;
+    text-decoration: none;
+    color: black;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 1px 4px 8px 1px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 30%;
+    height: 199px;
+}
+
+.carte_hebergement_vertical img {
+    width: 100%;
+    height: 62%;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.carte_hebergement_vertical:hover, .carte_hebergement_horizontal:hover {
+    transition: 0.3s;
+    box-shadow: 2px 8px 16px 2px rgba(0,0,0,0.2);
+}
+  
+.description_carte_hebergement_vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2px 10px;
+    width: 90%;
+    height: 35%;
+}
+
+.description_carte_hebergement_vertical h3 {
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: min(max(0.75em, 1.2vw), 1em);
+    font-weight: 700;
+}
+
+.description_carte_hebergement_vertical p {
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: min(max(0.688em, 1vw), 0.875em);
+}
+
+.note {
+    display: flex;
+    font-size: min(max(0.625em, 0.8vw), 0.75em);
+    color: #0065FC;
+}
+
+.note .etoile_grise {
+    color: #F2F2F2;
+}
+
+.carte_hebergement_horizontal {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    box-shadow: 1px 4px 8px 1px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 96%;
+    height: 144px;
+}
+
+.carte_hebergement_horizontal img {
+    width: 70%;
+    height: 144px;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 16px 0px 0px 16px;
+}
+
+.description_carte_hebergement_horizontal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2px 10px;
+    width: 90%;
+    height: 97%;
+}
+
+.description_carte_hebergement_horizontal h3 {
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: min(max(0.75em, 1.2vw), 1em);
+    font-weight: 700;
+}
+
+.description_carte_hebergement_horizontal p {
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: min(max(0.688em, 1vw), 0.875em);
+}
+
+.carte_activite {
+    display: block;
+    text-decoration: none;
+    color: black;
+    flex-direction: column;
+    box-shadow: 1px 4px 8px 1px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    overflow: hidden;
+    width: 23%;
+    height: 444px;
+}
+
+.carte_activite img {
+    width: 100%;
+    height: 87%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.carte_activite:hover {
+    transition: 0.3s;
+    box-shadow: 2px 8px 16px 2px rgba(0,0,0,0.2);
+}
+
+.carte_activite h3 {
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: min(max(0.813em, 1.2vw), 1em);
+    font-weight: 700;
+    margin: 14px 18px;
+    height: 40px;
+}
+
+.boite_service_footer {
+    width: 50%;
+}
+
+.boite_service_footer h3 {
+    font-size: 1.125em;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.choix_service_footer a {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    body {
+        max-width: 991px;
+        min-width: 768px;
+    }
+
+    #boite_filtre {
+        width: 100%;
+    }
+
+    #boite_hebergement_populaire {
+        display: initial;
+    }
+    
+    #hebergement {
+        width: auto;
+        margin-right: 0px;
+        margin-top: 20px;
+        height: 586px;
+    }
+    
+    #populaire {
+        width: auto;
+        margin-top: 40px;
+        height: 210px;
+    }
+
+    #boite_carte_hebergement_horizontal {
+        flex-direction: initial;
+        justify-content: space-between;
+    }
+
+    .filtre {
+        margin-left: 20px;
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 0.938em;
+    }
+    
+    .filtre i {
+        margin-right: 8px;
+        font-size: 1.125em;
+    }
+
+    .filtre:active { /*Ajout d'une propriété ":active" car le hover est inutile sur un écran tactile.*/
+        background-color: #DEEBFF;
+    }
+
+    .carte_hebergement_horizontal {
+        width: 30%;
+    }
+
+    .carte_activite {
+        height: 267px;
+    }
+
+    .carte_activite img {
+        height: 78%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    
+    body {
+        max-width: 767px;
+        min-width: 270px;
+    }
+
+    header {
+        display: initial;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    #corps_page {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #logo_page { /*Centrage du logo.*/
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #boite_titre_recherche_filtre {
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #boite_recherche {
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 100%;
+        justify-content: center;
+    }
+ 
+    #champ_recherche {
+        width: 50%;
+        padding-left: 8px;
+        font-size: 0.938em;
+    }
+    
+    #champ_recherche:focus {
+        outline: none;
+    }
+    
+    #bouton_recherche {
+        width: 50%;
+        font-size: 0.938em;
+    }
+
+    #boite_filtre {
+        display: initial;
+    }
+
+    #champ_filtre {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #boite_hebergement_populaire {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #hebergement, #populaire {
+        margin: 0;
+        padding: 30px 20px;
+        width: auto;
+        height: auto;
+        border-radius: 0px;
+    }
+    
+    #hebergement {
+        background-color: white;
+    }
+
+    #afficher_plus {
+        display: none;
+    }
+
+    #boite_carte_hebergement_vertical {
+        flex-direction: column;
+    }
+
+    #boite_carte_hebergement_horizontal {
+        justify-content: space-between;
+    }
+
+    #boite_activite {
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #boite_carte_activite {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #boite_footer {
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    .choix_menu {
+        padding-top: 0px;
+        padding-bottom: 15px;
+        margin-top: 48px;
+        width: 100%;
+        border-bottom: 3px solid #F2F2F2;
+    }
+    
+    .choix_menu:hover, .choix_menu:active {
+        font-weight: 500;
+        border-top: 0px;
+        border-bottom: 3px solid #0065FC;
+        padding-top: 0px;
+    }
+
+    .filtre {
+        margin-left: 0px;
+        margin-bottom: 15px;
+        padding-right: 8px;
+        padding-left: 8px;
+        width: 35%;
+        min-width: 136px;
+        font-size: 0.75em;
+    }
+
+    .filtre:active { /*Ajout d'une propriété ":active" car le hover est inutile sur un écran tactile.*/
+        background-color: #DEEBFF;
+    }
+    
+    .filtre i {
+        font-size: 1.375em;
+    }
+
+    .carte_hebergement_vertical {
+        width: 97%; /*Modification de la largeur des cartes pour que la marge colle au reste du site.*/
+    }
+
+    .carte_hebergement_horizontal {
+        width: 97%;
+    }
+
+    .carte_activite {
+        height: 190px;
+        width: 100%;
+        margin-bottom: 30px; /*Pour créer un espace égal (15px * 2) à celui entre les cartes hébergement et les cartes populaire.*/
+    }
+
+    .carte_activite img {
+        height: 72%; /*Réduction de la hauteur des images pour laisser plus d'espace au texte conformément à la maquette.*/
+    }
+
+    .choix_service_footer {
+        font-size: 0.875em;
+    }
+
+    .boite_service_footer h3 {
+        font-size: 1em;
+    }
+}
